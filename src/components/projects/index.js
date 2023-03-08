@@ -8,7 +8,7 @@ import * as C from './style';
 
 const Projects = () =>{
     return (
-        <C.Section>
+        <C.Section id="projects">
             <C.TextArea>
                 <C.Title>PROJETOS</C.Title>
                 <C.Text>

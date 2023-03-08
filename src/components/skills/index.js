@@ -6,7 +6,7 @@ import * as C from './style';
 
 const Skills = () =>{
     return (
-        <C.Section>
+        <C.Section id="skills">
             <C.Title>Habilidades</C.Title>
             <C.Container>
                 <C.SubTitle>
