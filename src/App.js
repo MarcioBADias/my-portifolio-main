@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/header";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
@@ -11,12 +11,9 @@ function App() {
     <BrowserRouter>
       <Header/>
       <Routes>
-          <Route path="/" element={<Navigate to="/projects" />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/" element={<Navigate to="/skills" />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" exact element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
       </Routes>
       <Global/>
     </BrowserRouter>
