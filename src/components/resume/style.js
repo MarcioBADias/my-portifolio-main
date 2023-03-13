@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   padding: 0 10%;
   overflow: hidden;
 
-  /* ::before {
+/*   ::before {
     position: absolute;
     content: '';
     height: 600px;
@@ -59,7 +59,7 @@ export const Wrapper = styled.div`
         top: 18%;
       }
     }
-  } */
+  }  */
 `;
 
 export const Container = styled.div`
@@ -132,12 +132,18 @@ export const Button = styled.button`
     }
 `;
 
+export const ImageSpace = styled.div`
+  width: 50vw;
+  @media (max-width: 840px){
+      display:none;
+  }
+`;
+
 export const Img = styled.img`
     position:relative;
-    height: 100vh;
-    width: 45vw;
-    top: 0px;
-    left: 100px;
+    width: 60vw;
+    top: 70px;
+    left: 50px;
     
     @media (max-width: 840px){
         display:none;
