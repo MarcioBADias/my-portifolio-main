@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
+import Contact from "./pages/contact";
 import Footer from "./components/footer";
 
 import Global from "./styles/global";
@@ -14,9 +15,10 @@ function App() {
     <BrowserRouter>
       <Header/>
       <Routes>
+          <Route path="/home" exact element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/home" exact element={<Home />} />
+          <Route path="/contacts" exact element={<Contact />} />
       </Routes>
       <Footer/>
       <Global/>
