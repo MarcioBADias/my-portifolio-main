@@ -38,15 +38,3 @@ export const Adress = styled.p`
 export const Logo = styled.img`
     width: 200px;
 `;
-
-export const SocialIcons = styled.i`
-    svg {
-    height: 50px;
-    margin: 0 1rem;
-    width: 50px;  
-  }
-  :hover{
-      color: var(--cor-primary);
-      cursor: pointer;
-    }
-`;

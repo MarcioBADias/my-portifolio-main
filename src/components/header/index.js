@@ -48,7 +48,7 @@ const Header = () => {
                 </C.MenuItem>
             </C.Menu>
 
-            <SocialIcons size={30}/>
+            <SocialIcons size={35}/>
             
             <C.MenuButton onClick={() => setShowMenu(!showMenu)}>
                 <C.MenuIcon>
