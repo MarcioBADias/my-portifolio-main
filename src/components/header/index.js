@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import Logo from '../../assets/img/logo.svg';
-import {
-    AiFillGithub,
-    AiFillLinkedin
-} from "react-icons/ai";
-import { RiWhatsappFill } from "react-icons/ri";
-import { CgMenuRound, CgCloseO } from "react-icons/cg";
-import * as C from './style'
 import { Link } from "react-router-dom";
+import SocialIcons from "../SocialIcons";
+
+import Logo from '../../assets/img/logo.svg';
+
+import { CgMenuRound, CgCloseO } from "react-icons/cg";
+
+import * as C from './style'
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -49,17 +48,7 @@ const Header = () => {
                 </C.MenuItem>
             </C.Menu>
 
-            <C.Container>
-                <C.SVG>
-                    <AiFillGithub/>
-                </C.SVG>
-                <C.SVG>
-                    <AiFillLinkedin/>
-                </C.SVG>
-                <C.SVG>
-                    <RiWhatsappFill/>
-                </C.SVG>
-            </C.Container>
+            <SocialIcons size={30}/>
             
             <C.MenuButton onClick={() => setShowMenu(!showMenu)}>
                 <C.MenuIcon>
