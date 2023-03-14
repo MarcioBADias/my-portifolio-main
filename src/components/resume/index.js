@@ -11,7 +11,7 @@ const Resume = () => {
     }
 
     return(
-        <C.Wrapper>
+        <C.Wrapper id="home">
             {!isScreenLessThan840px &&
             <C.Img src={profileToken} alt='Foto de perfil'/>}
             <C.Container>

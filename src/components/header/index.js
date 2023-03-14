@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import SocialIcons from "../socialIcons";
 
 import Logo from '../../assets/img/logo.svg';
@@ -19,28 +19,52 @@ const Header = () => {
 
             <C.Menu showMenu={showMenu}>
                 <C.MenuItem>
-                    <Link style={{textDecoration:'none'}} to={"/"}>
+                    <Link 
+                    style={{textDecoration:'none'}} 
+                    to='home' 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-80} 
+                    duration={800}>
                         <C.Link>
                             Inicio
                         </C.Link>
                         </Link>
                 </C.MenuItem>
                 <C.MenuItem>
-                    <Link style={{textDecoration:'none'}} to={"/skills"}>
+                <Link 
+                    style={{textDecoration:'none'}} 
+                    to='skills' 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-80} 
+                    duration={800}>
                         <C.Link>
                             Habilidades
                         </C.Link>
                     </Link>
                 </C.MenuItem>
                 <C.MenuItem>
-                    <Link style={{textDecoration:'none'}} to="/projects">
+                <Link 
+                    style={{textDecoration:'none'}} 
+                    to='projects' 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-80} 
+                    duration={800}>
                         <C.Link>
                             Projetos
                         </C.Link>
                     </Link>
                 </C.MenuItem>
                 <C.MenuItem>
-                    <Link style={{textDecoration:'none'}} to="/contacts">
+                <Link 
+                    style={{textDecoration:'none'}} 
+                    to='contact' 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-80} 
+                    duration={800}>
                         <C.Link>
                             Contatos
                         </C.Link>

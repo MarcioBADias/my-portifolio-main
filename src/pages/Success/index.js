@@ -1,10 +1,9 @@
 import React from "react";
-import Result from "../../components/result";
 
 const Success = () => {
     return(
         <div>
-            <Result/>
+            <h1>Teste!</h1>
         </div>
     )
 }

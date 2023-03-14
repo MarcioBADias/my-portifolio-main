@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 export const Section = styled.section`
     background-color: #313131;
     display: flex;
-    min-height: 40vh;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;

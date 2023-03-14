@@ -4,7 +4,7 @@ import * as C from './style';
 
 const Form = () => {
     return(
-        <C.Section>
+        <C.Section id='contact'>
         <C.SocialArea>
             <C.SquareArea>
             <C.Square style={{
