@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/img/logo.svg';
-import SocialIcons from '../SocialIcons';
+import SocialIcons from '../socialIcons';
 
 import * as C from './style'
 
