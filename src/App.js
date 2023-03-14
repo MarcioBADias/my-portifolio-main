@@ -5,6 +5,7 @@ import Projects from "./components/projects";
 import Skills from "./components/skills";
 import Contact from "./pages/contact";
 import Footer from "./components/footer";
+import Success from "./pages/Success";
 
 import Global from "./styles/global";
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/contacts" exact element={<Contact />} />
+          <Route path="/result" element={<Success />} />
       </Routes>
       <Footer/>
       <Global/>

@@ -30,7 +30,7 @@ const Form = () => {
                 <C.Title>
                     Entre em contato:
                 </C.Title>
-                <input type='hidden' name='_next' value='https://marcio-portifolio.netlify.app/'/>
+                <input type='hidden' name='_next' value='http://localhost:3000/result'/>
                 <C.InputLarge name='name' type='text' placeholder='Nome Completo'/>
                 <C.InputLarge name='email' type='email'  placeholder='E-mail de contato'/>
                 <C.InputTextBox name='message' placeholder='Digite sua menssagem'/>
