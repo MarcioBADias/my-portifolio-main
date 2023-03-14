@@ -1,12 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background-color: #313131;
+  align-items: center;
+  background-color: var(--cor-secondary);
   display: flex;
   height: 80px;
   justify-content: space-between;
-  align-items: center;
+  left: 0;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 99;
 `;
 
 export const Container = styled.div``;
@@ -23,9 +28,9 @@ export const Menu = styled.ul`
   height: auto;
 
   @media (max-width: 840px) {
-    background: #313131;
+    background: var(--cor-secondary);
     backdrop-filter: blur(3px);
-    display: ${({ showMenu }) => (showMenu ? "flex" : "none")};
+    display: ${({ showMenu }) => (showMenu ? 'flex' : 'none')};
     flex-direction: column;
     height: 100vh;
     justify-content:start;
@@ -43,7 +48,7 @@ export const MenuItem = styled.li`
   margin: 0 1rem;
 
   :hover {
-    color: #efefef;
+    color: var(--cor-light);
     font-size: 1.2rem;
   }
 
@@ -53,7 +58,7 @@ export const MenuItem = styled.li`
 `;
 
 export const Link = styled.a`
-  color: #ffc504;
+  color: --cor-evidence;
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 2px;

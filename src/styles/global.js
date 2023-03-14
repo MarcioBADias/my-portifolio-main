@@ -11,6 +11,9 @@ const Global = createGlobalStyle`
 
     :root {
         --cor-primary: #FFCB46;
+        --cor-secondary: #313131;
+        --cor-light: #efefef;
+        --cor-evidence: #ffc504;
     }
 
     body{
