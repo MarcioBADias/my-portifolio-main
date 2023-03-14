@@ -26,15 +26,16 @@ const Form = () => {
             </C.SquareArea>
         </C.SocialArea>
         <C.FormArea>
-            <C.Container>
+            <C.Form action='https://formsubmit.co/marcius.dev.estudos@gmail.com' method='POST'>
                 <C.Title>
                     Entre em contato:
                 </C.Title>
-                <C.InputLarge placeholder='Nome Completo'/>
-                <C.InputLarge placeholder='E-mail de contato'/>
-                <C.InputTextBox placeholder='Digite sua menssagem'/>
-                <C.Button>Enviar</C.Button>
-            </C.Container>
+                <input type='hidden' name='_next' value='https://marcio-portifolio.netlify.app/'/>
+                <C.InputLarge name='name' type='text' placeholder='Nome Completo'/>
+                <C.InputLarge name='email' type='email'  placeholder='E-mail de contato'/>
+                <C.InputTextBox name='message' placeholder='Digite sua menssagem'/>
+                <C.Button type='submit'>Enviar</C.Button>
+            </C.Form>
         </C.FormArea>
         </C.Section>
     );

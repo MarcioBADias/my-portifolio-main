@@ -46,7 +46,7 @@ export const FormArea = styled.div`
 
 `;
 
-export const Container = styled.div`
+export const Form = styled.form`
     align-items: center;
     background-color: var(--cor-primary);
     border-radius: 15px;
@@ -89,7 +89,7 @@ export const InputLarge = styled.input`
 }
 `;
 
-export const InputTextBox = styled.input`
+export const InputTextBox = styled.textarea`
   background-color: var(--cor-primary);
   border: 1px var(--cor-dark) solid;
   font-size: 1rem;
