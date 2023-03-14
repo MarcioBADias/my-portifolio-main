@@ -25,7 +25,8 @@ const Header = () => {
                     spy={true} 
                     smooth={true} 
                     offset={-80} 
-                    duration={800}>
+                    duration={800}
+                    onClick={() => setShowMenu(!showMenu)}>
                         <C.Link>
                             Inicio
                         </C.Link>
@@ -38,7 +39,8 @@ const Header = () => {
                     spy={true} 
                     smooth={true} 
                     offset={-80} 
-                    duration={800}>
+                    duration={800}
+                    onClick={() => setShowMenu(!showMenu)}>
                         <C.Link>
                             Habilidades
                         </C.Link>
@@ -51,7 +53,8 @@ const Header = () => {
                     spy={true} 
                     smooth={true} 
                     offset={-80} 
-                    duration={800}>
+                    duration={800}
+                    onClick={() => setShowMenu(!showMenu)}>
                         <C.Link>
                             Projetos
                         </C.Link>
@@ -64,7 +67,8 @@ const Header = () => {
                     spy={true} 
                     smooth={true} 
                     offset={-80} 
-                    duration={800}>
+                    duration={800}
+                    onClick={() => setShowMenu(!showMenu)}>
                         <C.Link>
                             Contatos
                         </C.Link>
@@ -80,16 +84,16 @@ const Header = () => {
                     <CgMenuRound>
                         <C.Menu showMenu={showMenu}>
                             <C.MenuItem>
-                                <C.Link to="/">Inicio</C.Link>
+                                <C.Link >Inicio</C.Link>
                             </C.MenuItem>
                             <C.MenuItem>
-                                <C.Link to="/skills">Habilidades</C.Link>
+                                <C.Link >Habilidades</C.Link>
                             </C.MenuItem>
                             <C.MenuItem>
-                                <C.Link to="/projects">Projetos</C.Link>
+                                <C.Link >Projetos</C.Link>
                             </C.MenuItem>
                             <C.MenuItem>
-                                <C.Link to="/contacts">Contatos</C.Link>
+                                <C.Link >Contatos</C.Link>
                             </C.MenuItem>
                         </C.Menu>
                     </CgMenuRound>}

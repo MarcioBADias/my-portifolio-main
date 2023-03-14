@@ -9,19 +9,23 @@ const Form = () => {
             <C.SquareArea>
             <C.Square style={{
                     top:90,
+                    left:110,
                     minWidth:380
                 }}>Deixe sua menssagem e contato.  Será retornada o mais breve o possível.</C.Square>
                 <C.Square style={{
                     top:90,
-                    left:400
+                    left:510,
+                    maxWidth: 150
                 }}>Telefone</C.Square>
                 <C.Square style={{
                     top:230,
+                    left:110,
                     minWidth:380
                 }}>Fique à vontade em me procurar em qualquer um dos canais ao lado.</C.Square>
                 <C.Square style={{
                     top:230,
-                    left:400
+                    left:510,
+                    maxWidth: 150
                 }}>email</C.Square>
             </C.SquareArea>
         </C.SocialArea>

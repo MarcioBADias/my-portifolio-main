@@ -1,13 +1,11 @@
 import { styled } from 'styled-components';
 
 export const Section = styled.section`
-  display: flex;
-  height: calc(100vh);
-    
+  display: flex;   
 `;
 
 export const SocialArea = styled.div`
-  width: 20vw;
+  width: 30vw;
 
   @media (max-width: 840px) {
     display: none;
@@ -17,12 +15,12 @@ export const SocialArea = styled.div`
 export const SquareArea = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 100px;
   position: relative;
 `;
 
 export const Square = styled.div`
   background-color: var(--cor-light);
+  box-shadow: 0 10px 10px var(--cor-dark);
   color: var(--cor-dark);
   margin: 1rem;
   min-height: 120px;
@@ -37,7 +35,7 @@ export const FormArea = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80vw;
+    width: 70vw;
     position: relative;
 
     @media (max-width: 840px) {
@@ -54,7 +52,7 @@ export const Form = styled.form`
     flex-direction: column;
     height: 85%;
     justify-content: center;
-    margin: 100px 0 20px 0;
+    padding: 3rem 0;
     width: 60%;
 
     @media (max-width: 840px) {
@@ -118,7 +116,7 @@ export const Button = styled.button`
   margin-left: 8rem;
   margin-top: 1rem;
   text-transform: capitalize;
-  box-shadow: 0 10px 10px var(--cor-Myellow);
+  box-shadow: 0 10px 10px var(--cor-dark);
   :hover{
     background-color: var(--cor-Myellow);
     color: var(light);
