@@ -19,7 +19,7 @@ const Header = () => {
 
             <C.Menu showMenu={showMenu}>
                 <C.MenuItem>
-                    <Link style={{textDecoration:'none'}} to={"/home"}>
+                    <Link style={{textDecoration:'none'}} to={"/"}>
                         <C.Link>
                             Inicio
                         </C.Link>
