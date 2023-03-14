@@ -6,7 +6,24 @@ const Form = () => {
     return(
         <C.Section>
         <C.SocialArea>
-
+            <C.SquareArea>
+            <C.Square style={{
+                    top:90,
+                    minWidth:380
+                }}>Deixe sua menssagem e contato.  Será retornada o mais breve o possível.</C.Square>
+                <C.Square style={{
+                    top:90,
+                    left:400
+                }}>Telefone</C.Square>
+                <C.Square style={{
+                    top:230,
+                    minWidth:380
+                }}>Fique à vontade em me procurar em qualquer um dos canais ao lado.</C.Square>
+                <C.Square style={{
+                    top:230,
+                    left:400
+                }}>email</C.Square>
+            </C.SquareArea>
         </C.SocialArea>
         <C.FormArea>
             <C.Container>

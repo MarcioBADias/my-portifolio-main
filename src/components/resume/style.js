@@ -63,6 +63,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
+  margin-top: 100px;
   width: 60vw;
   z-index: 5;
 
@@ -72,7 +73,7 @@ export const Container = styled.div`
 `;
 
 export const TopLine = styled.span`
-  color: #efc94c;
+  color: var(--cor-Myellow);
   display: block;
   position: relative;
   font-size: 2rem;
@@ -95,7 +96,7 @@ export const Title = styled.h1`
 `;
 
 export const MultiText = styled.span`
-  color: #efc94c;
+  color: var(--cor-Myellow);
   font-size: 1.6rem;
   margin-left: 0.5rem;
   text-transform: capitalize;
@@ -121,10 +122,10 @@ export const Button = styled.button`
     padding: 1rem 2rem;
     margin: 2rem .5rem;
     text-transform: capitalize;
-    box-shadow: 0 10px 10px #efc94c;
+    box-shadow: 0 10px 10px var(--cor-Myellow);
     :hover{
-        background-color: #efc94c;
-        color: #fff;
+        background-color: var(--cor-Myellow);
+        color: var(light);
     }
 
     @media (max-width: 840px){
@@ -140,12 +141,13 @@ export const ImageSpace = styled.div`
 `;
 
 export const Img = styled.img`
-    position:relative;
-    width: 60vw;
-    top: 70px;
-    left: 50px;
+  margin-top: 100px;
+  position:relative;
+  width: 60vw;
+  top: 70px;
+  left: 50px;
     
-    @media (max-width: 840px){
-        display:none;
-    }
+   @media (max-width: 840px){
+      display:none;
+  }
 `;

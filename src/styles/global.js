@@ -14,6 +14,8 @@ const Global = createGlobalStyle`
         --cor-secondary: #313131;
         --cor-light: #efefef;
         --cor-evidence: #ffc504;
+        --cor-Myellow: #efc94c;
+        --cor-dark: #000;
     }
 
     body{

@@ -58,7 +58,7 @@ export const MenuItem = styled.li`
 `;
 
 export const Link = styled.a`
-  color: --cor-evidence;
+  color: var(--cor-evidence);
   cursor: pointer;
   font-size: 1rem;
   letter-spacing: 2px;
