@@ -5,7 +5,12 @@ import { BiMailSend, BiMap, BiPhoneCall } from "react-icons/bi";
 import * as C from './style';
 
 const Form = () => {
-    const [validDate, setValidDate] = useState(true);
+    const [validDate, setValidDate] = useState(false);
+    const validName = /^[a-zA-ZÀ-ÿ]+([\s][a-zA-ZÀ-ÿ]+)*$/;
+    const validMail = /^[^\s@]+@[^\s@]+[^\s@]+$/;
+    const validText = /^[\s\S]+$/;
+
+    
 
     return(
         <C.Section id='contact'>
