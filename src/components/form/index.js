@@ -5,12 +5,29 @@ import { BiMailSend, BiMap, BiPhoneCall } from "react-icons/bi";
 import * as C from './style';
 
 const Form = () => {
-    const [validDate, setValidDate] = useState(false);
+    /* const [sendMessage, setSendMessage] = useState(false);
+    const [name, setName] = useState('');
+    const [mail, setMail] = useState('');
+    const [message, setMessage] = useState('');
+    const [isValidName, setIsValidName] = useState(true);
+    const [isValidMail, setIsValidMail] = useState(true);
+    const [isValidMessage, setIsValidMessage] = useState(true);
+
     const validName = /^[a-zA-ZÀ-ÿ]+([\s][a-zA-ZÀ-ÿ]+)*$/;
     const validMail = /^[^\s@]+@[^\s@]+[^\s@]+$/;
-    const validText = /^[\s\S]+$/;
+    const validMessage = /^[\s\S]+$/;
 
-    
+    const handleSubmit = e => {
+        e.preventDefault()
+
+        if(name === ''|| mail === '' || message === ''){
+            name !== validName && setIsValidName(false);
+            mail !== validMail && setIsValidMail(false);
+            message !== validMessage && setIsValidMessage(false);
+            return;
+        }
+    }
+     */
 
     return(
         <C.Section id='contact'>
@@ -71,23 +88,37 @@ const Form = () => {
             </C.SquareArea>
         </C.SocialArea>
         <C.FormArea>
-            <C.Form action='https://formsubmit.co/marcius.dev.estudos@gmail.com' method='POST'>
+            <C.Form 
+                action='https://formsubmit.co/marcius.dev.estudos@gmail.com' 
+                method='POST'>
                 <C.Title>
                     Entre em contato:
                 </C.Title>
                 <input type='hidden' name='_next' value='https://marcio-portifolio.netlify.app/'/>
-                <C.InputLarge name='name' type='text' placeholder='Nome Completo'/>
-                {!validDate && <span style={{color:'red',marginLeft:60, marginTop:-15, fontSize:12}}>
+                <C.InputLarge 
+                    name='name' 
+                    type='text' 
+                    placeholder='Nome Completo'/>
+
+                {/* {!isValidName && <span style={{color:'red',marginLeft:60, marginTop:-15, fontSize:12}}>
                         Insira um nome válido no campo acima.
-                    </span>}
-                <C.InputLarge name='email' type='email'  placeholder='E-mail de contato'/>
-                {!validDate && <span style={{color:'red',marginLeft:60, marginTop:-15, marginBottom:10, fontSize:12}}>
+                    </span>} */}
+
+                <C.InputLarge 
+                    name='email' 
+                    type='email'  
+                    placeholder='E-mail de contato'/>
+
+                {/* {!isValidMail && <span style={{color:'red',marginLeft:60, marginTop:-15, marginBottom:10, fontSize:12}}>
                         Insira um e-mail válido no campo acima.
-                    </span>}
-                <C.InputTextBox name='message' placeholder='Digite sua menssagem'/>
-                {!validDate && <span style={{color:'red',marginLeft:60, marginTop:5, fontSize:12}}>
+                    </span>} */}
+
+                <C.InputTextBox 
+                    name='message' 
+                    placeholder='Digite sua menssagem'/>
+                {/* {!isValidMessage && <span style={{color:'red',marginLeft:60, marginTop:5, fontSize:12}}>
                         Insira uma menssagem no campo acima.
-                    </span>}
+                    </span>} */}
                 <C.Button type='submit'>Enviar</C.Button>
             </C.Form>
         </C.FormArea>
