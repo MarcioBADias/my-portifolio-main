@@ -28,6 +28,7 @@ export const Square = styled.div`
   padding: 1rem;
   position: absolute;
   z-index: 1;
+
 `;
 
 export const FormArea = styled.div`

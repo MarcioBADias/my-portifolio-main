@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { BiMailSend, BiMap, BiPhoneCall } from "react-icons/bi";
+
 import * as C from './style';
 
 const Form = () => {
@@ -13,22 +15,54 @@ const Form = () => {
                     top:90,
                     left:110,
                     minWidth:380
-                }}>Deixe sua menssagem e contato.  Será retornada o mais breve o possível.</C.Square>
+                }}>
+                    <p style={{ fontSize:15 }}>
+                        Se houver qualquer dúvida ou quiser discutir um projeto, não hesite em entrar em contato. Estou sempre disponível para responder por e-mail, ligações ou mensagem direta do site. Fico ansioso para ouvir você em breve! 
+                    </p>
+                </C.Square>
                 <C.Square style={{
                     top:90,
                     left:510,
                     maxWidth: 150
-                }}>Telefone</C.Square>
+                }}>
+                    <BiPhoneCall style={{
+                        height:50,
+                        marginLeft:30,
+                        width:50
+                    }}/> 
+                    <p style={{ textAlign: 'center' }}>Telefone:</p>
+                    <p style={{ textAlign: 'center', fontSize:12, fontWeight:'bold' }}>
+                        (22) 99942-4224
+                    </p>
+                </C.Square>
                 <C.Square style={{
                     top:230,
                     left:110,
                     minWidth:380
-                }}>Fique à vontade em me procurar em qualquer um dos canais ao lado.</C.Square>
+                }}><BiMailSend style={{
+                    height:50,
+                    marginLeft:150,
+                    width:50
+                }}/> 
+                <p style={{ textAlign: 'center' , fontSize:12 }}>E-mail de contato:</p>
+                <p style={{ textAlign: 'center', fontWeight:'bold' }}>
+                    marcio.b.a.dias@gmail.com
+                </p></C.Square>
                 <C.Square style={{
                     top:230,
                     left:510,
                     maxWidth: 150
-                }}>email</C.Square>
+                }}>
+                    <BiMap style={{
+                        height:40,
+                        marginLeft:40,
+                        width:40
+                    }}/> 
+                    <p style={{ textAlign: 'center', fontSize:12 }}>Endereço:</p>
+                    <p style={{ textAlign: 'center', fontSize:12, fontWeight:'bold' }}>
+                        Armação dos Búzios/RJ
+                    </p>
+                </C.Square>
             </C.SquareArea>
         </C.SocialArea>
         <C.FormArea>
