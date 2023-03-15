@@ -81,6 +81,14 @@ export const InputLarge = styled.input`
   padding: .5rem;
   width: 60%;
 
+  :focus{
+    border: none;
+    outline: none;
+  }
+  ::placeholder{
+    background-color: none;
+  }
+
   @media (max-width: 840px) {
   margin-left: 0;
   width: 80% ;
