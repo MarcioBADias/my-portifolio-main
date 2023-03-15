@@ -63,7 +63,7 @@ export const Form = styled.form`
 
 export const Title = styled.h1`
   margin-bottom: 1rem;
-  margin-left: 8rem;
+  margin-left: 4rem;
   text-transform: uppercase;
 
   @media (max-width: 840px) {
@@ -78,7 +78,7 @@ export const InputLarge = styled.input`
   border-bottom: 1px var(--cor-dark) solid;
   font-size: 1rem;
   margin-bottom: 1rem;
-  margin-left: 8rem;
+  margin-left: 4rem;
   padding: .5rem;
   width: 60%;
 
@@ -100,7 +100,7 @@ export const InputTextBox = styled.textarea`
   background-color: var(--cor-primary);
   border: 1px var(--cor-dark) solid;
   font-size: 1rem;
-  margin-left: 8rem;
+  margin-left: 4rem;
   padding: .5rem;
   height: 200px;
   width: 60%;
@@ -122,7 +122,7 @@ export const Button = styled.button`
   font-size: 1.2rem;
   font-weight: 700;
   padding: .5rem 2rem;
-  margin-left: 8rem;
+  margin-left: 4rem;
   margin-top: 1rem;
   text-transform: capitalize;
   box-shadow: 0 10px 10px var(--cor-dark);
