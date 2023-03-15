@@ -12,8 +12,6 @@ const Resume = () => {
 
     return(
         <C.Wrapper id="home">
-            {!isScreenLessThan840px &&
-            <C.Img src={profileToken} alt='Foto de perfil'/>}
             <C.Container>
                 <C.TopLine>Marcio Dias</C.TopLine>
                 <C.Title>
@@ -27,10 +25,9 @@ const Resume = () => {
                 </C.Text>
                 <C.Button><a style={{backgroundColor:'none', textDecoration:'none', color:'inherit'}} href="https://drive.google.com/file/d/18zax1YkLC8hTivX-TnZARoJWiAY5ugoX/view?usp=sharing">Curriculo Pdf</a></C.Button>
             </C.Container >
-            {isScreenLessThan840px &&
             <C.ImageSpace>
                 <C.Img src={profile} alt='Foto de perfil'/>
-            </C.ImageSpace>}
+            </C.ImageSpace>
         </C.Wrapper>
     )
 }

@@ -5,61 +5,61 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
   align-items: center;
+  justify-content: center;
   padding: 0 10%;
+  position: relative;
   overflow: hidden;
 
-/*   ::before {
+  ::before{
     position: absolute;
     content: '';
-    height: 600px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
-    left: -12%;
-    top: 40%;
-    background: linear-gradient(45deg, #000, #efc94c);
-    animation: object1 6s linear infinite;
-    z-index: 0;
+    left: -15%;
+    top: 30%;
+    background: linear-gradient(45deg, var(--cor-dark),var(--cor-primary));
+    z-index: -2;
 
-    @keyframes object1 {
-      50% {
-        left: -13%;
-        top: 41%;
+    animation: object1 20s linear infinite;
+
+    @keyframes object1{
+      50%{
+        left:-5%;
+        top: 25%;
       }
     }
 
     @media (max-width: 840px) {
-      height: 400px;
-      width: 400px;
-      left: -30%;
-      top: 55%;
-
-      @keyframes object1 {
-        50% {
-          left: -28%;
-          top: 50%;
-        }
-      }
-    }
+      left: -15%;
+      top: 60%;
+  }
   }
 
-  ::after {
+  ::after{
     position: absolute;
     content: '';
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    left: 45%;
-    top: 20%;
-    background: linear-gradient(45deg, #000, #efc94c);
-    animation: object2 6s linear infinite;
+    left: 40%;
+    top: 15%;
+    background: linear-gradient(45deg, var(--cor-dark),var(--cor-primary));
+    animation: object2 10s linear infinite;
+    z-index: -2;
 
-    @keyframes object2 {
-      50% {
-        left: 43%;
-        top: 18%;
+    @keyframes object2{
+      50%{
+        top: 20%;
       }
     }
-  }  */
+
+    @media (max-width: 840px) {
+      left: 65%;
+      top: 15%;
+  }
+
+  }
 `;
 
 export const Container = styled.div`
@@ -75,7 +75,6 @@ export const Container = styled.div`
 export const TopLine = styled.span`
   color: var(--cor-Myellow);
   display: block;
-  position: relative;
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 3px;
@@ -135,6 +134,7 @@ export const Button = styled.button`
 
 export const ImageSpace = styled.div`
   width: 50vw;
+  
   @media (max-width: 840px){
       display:none;
   }
