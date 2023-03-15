@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/img/logo.svg';
+import Logo from '../logo';
 import SocialIcons from '../socialIcons';
 
 import * as C from './style'
@@ -7,6 +7,8 @@ import * as C from './style'
 const Footer = () => {
     return(
         <C.Section>
+            <SocialIcons size={50}/>
+            <Logo size={200} />
             <C.Container>
                 <C.Title>
                     Endereço:
@@ -18,10 +20,6 @@ const Footer = () => {
                 (22) 99942-4224
                 </C.Adress>
             </C.Container>
-            <C.Container>
-                <C.Logo src={Logo} alt='Logo Marcius Code' />
-            </C.Container>
-            <SocialIcons size={50}/>
         </C.Section>
     )
 }

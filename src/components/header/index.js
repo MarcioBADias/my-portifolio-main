@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import Logo from "../logo";
 import SocialIcons from "../socialIcons";
-
-import Logo from '../../assets/img/logo.svg';
 
 import { CgMenuRound, CgCloseO } from "react-icons/cg";
 
@@ -13,9 +12,7 @@ const Header = () => {
 
     return (
         <C.Nav>
-            <C.Container>
-                <C.Img src={Logo} alt='Logo Marcius Code' />
-            </C.Container>
+            <Logo size={80}/>
 
             <C.Menu showMenu={showMenu}>
                 <C.MenuItem>

@@ -34,6 +34,3 @@ export const Adress = styled.p`
 
 `;
 
-export const Logo = styled.img`
-    width: 200px;
-`;
