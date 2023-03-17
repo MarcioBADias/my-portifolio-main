@@ -1,15 +1,11 @@
 import React from "react";
 import profile from "../../assets/img/profile-image.svg";
-import profileToken from '../../assets/img/profile-token.svg';
 import SelfWritten from "../self-written";
 
 import * as C from './style';
 
 const Resume = () => {
-    const isScreenLessThan840px = () => {
-    return window.innerWidth < 840;
-    }
-
+    
     return(
         <C.Wrapper id="home">
             <C.Container>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { BiMailSend, BiMap, BiPhoneCall } from "react-icons/bi";
 
