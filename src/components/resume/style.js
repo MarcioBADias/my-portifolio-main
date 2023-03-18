@@ -19,9 +19,8 @@ export const Wrapper = styled.div`
     left: -15%;
     top: 30%;
     background: linear-gradient(45deg, var(--cor-dark),var(--cor-primary));
-    z-index: -2;
-
     animation: object1 20s linear infinite;
+    z-index: -1;
 
     @keyframes object1{
       50%{
@@ -46,8 +45,7 @@ export const Wrapper = styled.div`
     top: 15%;
     background: linear-gradient(45deg, var(--cor-dark),var(--cor-primary));
     animation: object2 10s linear infinite;
-    z-index: -2;
-
+    
     @keyframes object2{
       50%{
         top: 20%;
@@ -122,6 +120,7 @@ export const Button = styled.button`
     margin: 2rem .5rem;
     text-transform: capitalize;
     box-shadow: 0 10px 10px var(--cor-Myellow);
+    
     :hover{
         background-color: var(--cor-Myellow);
         color: var(light);
