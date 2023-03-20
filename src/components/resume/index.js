@@ -1,6 +1,6 @@
 import React from "react";
 import profile from "../../assets/img/profile-image.svg";
-import SelfWritten from "../self-written";
+//import SelfWritten from "../self-written";
 
 import * as C from './style';
 
