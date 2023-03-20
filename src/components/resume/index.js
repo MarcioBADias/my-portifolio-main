@@ -13,7 +13,7 @@ const Resume = () => {
                 <C.Title>
                     Desenvolvedor
                     <C.MultiText>
-                        <SelfWritten/>
+                        Front-end{/*<SelfWritten />*/}
                     </C.MultiText>
                 </C.Title>
                 <C.Text>
