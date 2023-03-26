@@ -13,7 +13,7 @@ const SelfWritten = () => {
         ],
             loop: true,
             typeSpeed: 100,
-            backSpeed: 80,
+            backSpeed: 100,
             backDelay: 1200
         };
    typed.current = new Typed(el.current, options);
